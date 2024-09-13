@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var akhila=document.createElement("h1");
+        akhila.innerText="Akhila Sirigiri";
+        akhila.style.color="blue";
+        document.body.appendChild(akhila);
+        var obj=document.createElement("h1");
+        obj.innerText=("Objective");
+        obj.style.color="red";
+        document.body.appendChild(obj);
+        var para=document.createElement("p");
+        para.innerText="passionate about specific area of intrest, I am seeking an entry-level position that allows me to apply my relevent skills or knoledge to drive innovation and deliver results";
+        para.style.color="green"
+        document.body.appendChild(para);
+        var tech=document.createElement("h1");
+        tech.innerText="Technical Skills";
+        tech.style.color="blue";
+        document.body.appendChild(tech);
+        var skills=document.createElement("ul")
+        skill=["html","css","javascript"]
+        for(i=0;i<skill.length;i++){
+            var li=document.createElement("li");
+            li.innerText=skill[i];
+            li.style.color="red";
+           skills.appendChild(li);
+        }
+        document.body.appendChild(skills);
+        var dec=document.createElement("h1");
+        dec.innerText="declaration";
+        dec.style.color="green";
+        document.body.appendChild(dec);
+        var para=document.createElement("p");
+        para.innerText="I here by declare all the above given details are true to my knowleedge"
+        para.style.color="skyblue";
+        document.body.appendChild(para);
+        let b=0;
+        const a=["lightgreen","red","blue","green","yellow"];
+        function styles(){
+            document.body.style.backgroundColor=a[b];
+            b=(b+1)%a.length;
+        }
+        
+    </script>
+    <button onclick="styles()">click me</button>
+</body>
+</html>
